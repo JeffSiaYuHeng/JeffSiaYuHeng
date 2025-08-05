@@ -1,11 +1,13 @@
-- 👋 Hi, I’m Jeff Sia Yu Heng
-- 👀 I’m passionate about the world of Web Development.
-- 🌱 Currently, I'm diving deep into PHP and MySQL, constantly expanding my skill set.
-- 🎓 I'm pursuing a Diploma in Computer Science at Nilai University.
-- 💡 As the President of the Jarvis Technology Club, I excel in leadership, event management, and organization.
-- 🏆 Proud recipient of the Best Project Award at the Computing Research and Innovation Conference (CRC 2023).
-- 🌐 I'm open to collaboration and always excited to work on innovative projects.
-- 📫 Reach me at siayuhengjeff@gmail.com to connect and discuss exciting opportunities!
+## 👋 Hi, I’m Jeff Sia Yu Heng  
+
+- 💻 **Aspiring Software Engineer** passionate about **Web Development** and emerging technologies like **Blockchain**.  
+- 🌱 Currently diving deep into **PHP** & **MySQL**, while strengthening skills in **C++**, **Java**, **HTML/CSS**, and **JavaScript**.  
+- 🎓 Pursuing a **Bachelor’s in Software Engineering** at **Nilai University** (CGPA: 3.81, last semester GPA: 4.0).  
+- 💡 **President of Jarvis Technology Club** | **Former Student Council Vice President** | Experienced in **leadership**, **project management**, and **event organization**.  
+- 🏆 **Best Project Award** – Computing Research and Innovation Conference (CRC 2023).  
+- 🌐 Open to **collaboration** on innovative, practical, and impactful projects.  
+- 🎯 Career goal: Becoming a **Software Engineer /  Product Manager**.  
+- 📫 Contact: **siayuhengjeff@gmail.com**  
 
 <!---
 JeffSiaYuHeng/JeffSiaYuHeng is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
