@@ -11,7 +11,7 @@
 ## 🛠️ Current Focus
 
 * 🤖 **Full Stack AI Engineer** at **BlackSmith DATA (Alt Shift)**, building autonomous AI agent frameworks and orchestrating SME digital transformations.
-* 🏗️ **Architecting Meta-Systems**: Developing workflows for "Digital Headhunters" and "Agentic Workflows" where humans serve as auditors to higher-level AI cognition.
+* 🏗️ **Architecting Meta-Systems**: Developing workflows for "Agentic Workflows" where humans serve as auditors to higher-level AI cognition.
 * ⚛️ **Vibe Coding & Agentic SEO**: Leveraging AI-accelerated development methodologies to build high-performance, dynamic web applications.
 
 ## 🏆 Recent Highlights
