@@ -5,6 +5,7 @@
 *Synthesizing human intent with autonomous agentic systems.*
 
 🌐 **Portfolio:** https://founder.onotape.one/
+🎛️ **ONOTAPE** — open digital asset issuance protocol for private audio: https://onotape.one
 
 ---
 
