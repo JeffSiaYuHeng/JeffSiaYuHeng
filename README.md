@@ -15,15 +15,7 @@ I build AI systems from problem definition to production at altShift. My work sp
 | **[ONOTAPE](https://onotape.one/)** | A private digital cassette library with two-sided tapes, finite capacity, and tactile playback. Make a tape, keep it, or give it away. |
 | **Fishture** | An AI fishing companion prototyped in three hours. Top 5 at the March 2026 GDG / Google DeepMind Hackathon. |
 
-## Tutorial · Planner, Coder, Evaluator
-
-I developed this workflow while building ONOTAPE. Try it on one feature you can test yourself:
-
-1. **Planner** — Describe the intended result and write down two acceptance checks.
-2. **Coder** — Implement one change and report what changed and what was tested.
-3. **Evaluator** — Review the diff, run the checks, and return any specific failure for the next pass.
-
-For a tape player, try flipping the tape while it’s playing and while it’s paused. Write down what you expect in each state before starting. Save the plan and review notes so the next session can pick up from there.
+<a href="https://onotape.one/"><img src="assets/onotape-project.png" width="160" alt="ONOTAPE pixel-art wordmark"></a>
 
 ## Milestones
 
