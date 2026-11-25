@@ -9,17 +9,6 @@ I build AI systems from the first conversation to production at altShift. I work
 **Nilai University Valedictorian · Class of 2026**  
 Bachelor of Software Engineering · CGPA 3.82 · Best Student Award
 
-## Selected work
-
-### Enterprise AI Chatbot
-Built and deployed an internal knowledge assistant using retrieval-augmented generation. Worked from document ingestion and vector search through model integration, interface design, and testing.
-
-### Financial Consolidation & Reconciliation
-Built workflows to consolidate records across locations, reconcile sales and purchases, match bank transactions, and produce trial balance and profit-and-loss reports.
-
-### Fishture
-Prototyped an AI fishing companion in three hours. Top 5 at the March 2026 GDG / Google DeepMind Hackathon.
-
 ## GitHub activity
 
 ![My commits on private GitHub repositories in the latest 30 days](assets/commit-activity.svg)
