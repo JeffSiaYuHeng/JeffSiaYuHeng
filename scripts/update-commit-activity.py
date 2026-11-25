@@ -74,17 +74,18 @@ def render_card(total, today):
   <title id="title">{total:,} private-repository commits over 30 days as of {today.isoformat()} UTC</title>
   <defs>
     <linearGradient id="plate" x2="1" y2="1">
-      <stop stop-color="#23352b"/>
-      <stop offset="1" stop-color="#101914"/>
+      <stop stop-color="#f3f1e9"/>
+      <stop offset="1" stop-color="#d7d9ce"/>
     </linearGradient>
   </defs>
-  <rect x="1" y="1" width="498" height="88" rx="8" fill="url(#plate)" stroke="#658477"/>
-  <path d="M9 14v62" stroke="#8fd6ac" stroke-width="2"/>
-  <path d="M383 21h95m-95 6h95" stroke="#6d9583" opacity=".45" stroke-dasharray="2 4"/>
+  <rect x="1" y="1" width="498" height="88" rx="8" fill="url(#plate)" stroke="#a4afa1"/>
+  <rect x="5" y="5" width="490" height="80" rx="5" fill="none" stroke="#f9f7ef"/>
+  <path d="M9 14v62" stroke="#557861" stroke-width="2"/>
+  <path d="M383 21h95m-95 6h95" stroke="#658674" opacity=".45" stroke-dasharray="2 4"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
-    <text x="25" y="31" fill="#c3d3c9" font-size="13">PRIVATE REPOSITORY COMMITS · 30 DAYS</text>
-    <text x="25" y="68" fill="#a9edc7" font-size="30" font-weight="700">{total:,}</text>
-    <text x="479" y="66" text-anchor="end" fill="#c3d3c9" font-size="12">{today.isoformat()} UTC</text>
+    <text x="25" y="31" fill="#334c3d" font-size="13">PRIVATE REPOSITORY COMMITS · 30 DAYS</text>
+    <text x="25" y="68" fill="#1f4734" font-size="30" font-weight="700">{total:,}</text>
+    <text x="479" y="66" text-anchor="end" fill="#334c3d" font-size="12">{today.isoformat()} UTC</text>
   </g>
 </svg>
 """
