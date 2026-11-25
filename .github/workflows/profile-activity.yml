@@ -22,7 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Refresh public commit count
+      - name: Refresh private commit count
+        env:
+          PROFILE_ACTIVITY_TOKEN: ${{ secrets.PROFILE_ACTIVITY_TOKEN }}
         run: python3 scripts/update-commit-activity.py
       - name: Publish updated card
         run: |
@@ -32,5 +34,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/commit-activity.svg
-          git commit -m "Refresh public commit activity"
+          git commit -m "Refresh private commit activity"
           git push

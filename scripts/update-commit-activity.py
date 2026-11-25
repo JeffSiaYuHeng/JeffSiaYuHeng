@@ -1,49 +1,91 @@
 from datetime import datetime, timedelta, timezone
 import json
+import os
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.error import HTTPError, URLError
+from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
 USERNAME = "JeffSiaYuHeng"
 OUTPUT = Path(__file__).resolve().parents[1] / "assets" / "commit-activity.svg"
 
 
-def fetch_commit_count(today):
+def github_pages(path, token, params, allow_empty=False):
+    page = 1
+    while True:
+        query = urlencode({**params, "page": page, "per_page": 100})
+        request = Request(
+            f"https://api.github.com/{path}?{query}",
+            headers={
+                "Accept": "application/vnd.github+json",
+                "Authorization": f"Bearer {token}",
+                "User-Agent": "JeffSiaYuHeng-profile-activity",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+        )
+        try:
+            with urlopen(request, timeout=25) as response:
+                items = json.load(response)
+                has_next = 'rel="next"' in response.headers.get("Link", "")
+        except HTTPError as error:
+            if allow_empty and error.code == 409:
+                return
+            raise RuntimeError(f"GitHub request failed (HTTP {error.code})") from None
+        except (TimeoutError, URLError):
+            raise RuntimeError("GitHub request failed") from None
+        if not isinstance(items, list):
+            raise RuntimeError("GitHub returned an unexpected page")
+        yield from items
+        if not has_next:
+            return
+        page += 1
+
+
+def count_private_commits(today, token):
     start = today - timedelta(days=29)
-    query = urlencode({
-        "q": f"author:{USERNAME} author-date:{start.isoformat()}..{today.isoformat()}",
-        "per_page": 1,
-    })
-    request = Request(
-        f"https://api.github.com/search/commits?{query}",
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "JeffSiaYuHeng-profile-activity",
-            "X-GitHub-Api-Version": "2022-11-28",
-        },
+    repositories = github_pages(
+        "user/repos", token, {"visibility": "private", "affiliation": "owner"}
     )
-    # Anonymous requests only search public repositories.
-    with urlopen(request, timeout=20) as response:
-        result = json.load(response)
-    total = result.get("total_count")
-    if result.get("incomplete_results") is not False or type(total) is not int or total < 0:
-        raise RuntimeError("GitHub did not return a complete commit count")
-    return total
+    commits = set()
+    owned_repositories = 0
+    for repo in repositories:
+        if not repo["private"] or repo["owner"]["login"].casefold() != USERNAME.casefold():
+            continue
+        owned_repositories += 1
+        name = quote(repo["name"], safe="")
+        for commit in github_pages(
+            f"repos/{USERNAME}/{name}/commits",
+            token,
+            {
+                "author": USERNAME,
+                "since": f"{start.isoformat()}T00:00:00Z",
+                "until": f"{today.isoformat()}T23:59:59Z",
+            },
+            allow_empty=True,
+        ):
+            commits.add(commit["sha"])
+    if not owned_repositories:
+        raise RuntimeError("No owned private repositories are visible to the token")
+    return len(commits)
 
 
 def render_card(total, today):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="500" height="90" viewBox="0 0 500 90" role="img" aria-labelledby="title">
-  <title id="title">{total:,} public GitHub commits over 30 days as of {today.isoformat()} UTC</title>
-  <rect x="1" y="1" width="498" height="88" rx="8" fill="#101c19" stroke="#365951"/>
+  <title id="title">{total:,} private-repository commits over 30 days as of {today.isoformat()} UTC</title>
+  <rect x="1" y="1" width="498" height="88" rx="8" fill="#111814" stroke="#586c61"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
-    <text x="20" y="31" fill="#b6d2c7" font-size="13">PUBLIC GITHUB COMMITS · 30 DAYS</text>
-    <text x="20" y="68" fill="#9df2cd" font-size="30" font-weight="700">{total:,}</text>
-    <text x="479" y="66" text-anchor="end" fill="#b6d2c7" font-size="12">{today.isoformat()} UTC</text>
+    <text x="20" y="31" fill="#c3d3c9" font-size="13">PRIVATE REPOSITORY COMMITS · 30 DAYS</text>
+    <text x="20" y="68" fill="#a9edc7" font-size="30" font-weight="700">{total:,}</text>
+    <text x="479" y="66" text-anchor="end" fill="#c3d3c9" font-size="12">{today.isoformat()} UTC</text>
   </g>
 </svg>
 """
 
 
 if __name__ == "__main__":
-    today = datetime.now(timezone.utc).date()
-    OUTPUT.write_text(render_card(fetch_commit_count(today), today), encoding="utf-8")
+    token = os.environ.get("PROFILE_ACTIVITY_TOKEN", "").strip()
+    if not token:
+        print("Private activity token is unavailable; keeping the existing snapshot.")
+    else:
+        today = datetime.now(timezone.utc).date()
+        OUTPUT.write_text(render_card(count_private_commits(today, token), today), encoding="utf-8")

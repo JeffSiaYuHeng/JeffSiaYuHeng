@@ -33,6 +33,6 @@ For a tape player, try flipping the tape while it’s playing and while it’s p
 
 ## GitHub activity
 
-[![Public GitHub commits over the latest 30 days](assets/commit-activity.svg)](https://github.com/search?q=author%3AJeffSiaYuHeng&type=commits)
+![My commits on private GitHub repositories in the latest 30 days](assets/commit-activity.svg)
 
-Refreshed daily from GitHub’s public commit search across indexed default branches. Private repositories are excluded.
+Unique commits credited to me on the default branches of my private repositories over 30 UTC days. The card shows the total and snapshot date.
