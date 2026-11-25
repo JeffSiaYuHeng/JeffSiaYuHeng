@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="278" viewBox="0 0 760 240" role="img" aria-labelledby="title">
   <title id="title">ONOTAPE cassette illustration</title>
   <defs>
     <linearGradient id="bg" x2="1" y2="1">
-      <stop stop-color="#2f4037"/>
-      <stop offset="1" stop-color="#111d17"/>
+      <stop stop-color="#dbe1d5"/>
+      <stop offset="1" stop-color="#afc1b1"/>
     </linearGradient>
     <linearGradient id="body" x2="0" y2="1">
       <stop stop-color="#f1eee2"/>
@@ -14,7 +14,7 @@
       <stop offset="1" stop-color="#799581"/>
     </linearGradient>
     <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
-      <path d="M0 16V0h16" fill="none" stroke="#d8ede0" stroke-opacity=".055"/>
+      <path d="M0 16V0h16" fill="none" stroke="#345644" stroke-opacity=".09"/>
     </pattern>
     <g id="hub">
       <circle r="16" fill="#8f9e94" stroke="#c3cdc4" stroke-width="1.2"/>
@@ -28,9 +28,9 @@
   </defs>
   <rect width="760" height="240" rx="12" fill="url(#bg)"/>
   <rect width="760" height="240" rx="12" fill="url(#grid)"/>
-  <rect x="1" y="1" width="758" height="238" rx="11" fill="none" stroke="#597568"/>
-  <path d="M40 32h680M40 208h680" stroke="#849d8f" opacity=".34"/>
-  <path d="M40 40V32h8m664 0h8v8M40 200v8h8m664 0h8v-8" fill="none" stroke="#b5cabe"/>
+  <rect x="1" y="1" width="758" height="238" rx="11" fill="none" stroke="#82998b"/>
+  <path d="M40 32h680M40 208h680" stroke="#486653" opacity=".38"/>
+  <path d="M40 40V32h8m664 0h8v8M40 200v8h8m664 0h8v-8" fill="none" stroke="#587767"/>
   <g transform="translate(387 38)">
     <rect x="3" y="7" width="292" height="166" rx="11" fill="#07100b" opacity=".65"/>
     <rect width="292" height="166" rx="10" fill="url(#body)" stroke="#f8f5e9"/>
@@ -50,7 +50,7 @@
     <use href="#fastener" x="284" y="158"/>
     <use href="#fastener" x="146" y="139"/>
   </g>
-  <text x="60" y="111" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="49" font-weight="700" letter-spacing="3" fill="#f1f4eb">ONOTAPE</text>
-  <path d="M62 134h170" stroke="#a9ccae" stroke-width="2"/>
-  <text x="62" y="161" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16" fill="#becfc1">Private digital tape library</text>
+  <text x="60" y="111" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="49" font-weight="700" letter-spacing="3" fill="#193426">ONOTAPE</text>
+  <path d="M62 134h170" stroke="#507760" stroke-width="2"/>
+  <text x="62" y="161" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16" fill="#344f41">Private digital tape library</text>
 </svg>
