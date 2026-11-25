@@ -1,42 +1,38 @@
-# 👋 Hi, I’m Jeff Sia Yu Heng
+# Jeff Sia Yu Heng · 谢宇恒
 
-### 🚀 Full Stack AI Engineer | Meta-Architect
+![Jeff Sia Yu Heng — Full Stack AI Engineer and creator of ONOTAPE](assets/profile-header.svg)
 
-*Synthesizing human intent with autonomous agentic systems.*
+[Website](https://founder.onotape.one/) · [ONOTAPE](https://onotape.one/) · [LinkedIn](https://www.linkedin.com/in/sia-yu-heng-jeff/) · [Email](mailto:siayuhengjeff@gmail.com)
 
-🌐 **Portfolio:** https://founder.onotape.one/
-🎛️ **ONOTAPE** — open digital asset issuance protocol for private audio: https://onotape.one
+I build AI systems from problem definition to production at altShift. My work spans retrieval, evaluation, full-stack delivery, and the workflows people use to check the results. On the side, I build ONOTAPE, a private digital cassette library.
 
----
+## Selected work
 
-## 🛠️ Current Focus
+| Project | What I built |
+| --- | --- |
+| **Enterprise AI Chatbot** | Built and deployed an internal knowledge assistant using retrieval-augmented generation. I worked across document ingestion, embeddings, vector search, model integration, the interface, and testing. |
+| **Financial Consolidation & Reconciliation** | Built workflows to consolidate records across locations, reconcile sales and purchases, match bank transactions, and surface trial balance and profit-and-loss reports. |
+| **[ONOTAPE](https://onotape.one/)** | A private digital cassette library with two-sided tapes, finite capacity, and tactile playback. Make a tape, keep it, or give it away. |
+| **Fishture** | An AI fishing companion prototyped in three hours. Top 5 at the March 2026 GDG / Google DeepMind Hackathon. |
 
-* 🤖 **Full Stack AI Engineer** at **BlackSmith DATA (Alt Shift)**, building autonomous AI agent frameworks and orchestrating SME digital transformations.
-* 🏗️ **Architecting Meta-Systems**: Developing workflows for "Agentic Workflows" where humans serve as auditors to higher-level AI cognition.
-* ⚛️ **Vibe Coding & Agentic SEO**: Leveraging AI-accelerated development methodologies to build high-performance, dynamic web applications.
+## Tutorial · Planner, Coder, Evaluator
 
-## 🏆 Recent Highlights
+I developed this workflow while building ONOTAPE. Try it on one feature you can test yourself:
 
-* 🥇 **Top 5 Winner** – **Google DeepMind Hackathon (2026)**: Developed **Fishture**, an AI-powered fishing assistant that simulated "System 2 deep-thinking loops" in LLMs during a 3-hour sprint.
-* 🚀 **Performance Engineering**: Scaled automation coverage to 87% using Cypress and k6 for large-scale enterprise platforms.
-* 🎓 **Academic Excellence**: Pursuing a **B.Sc. in Software Engineering** at **Nilai University** (CGPA: 3.82) with a background in complex manual and service labor that fuels my resilience.
+1. **Planner** — Describe the intended result and write down two acceptance checks.
+2. **Coder** — Implement one change and report what changed and what was tested.
+3. **Evaluator** — Review the diff, run the checks, and return any specific failure for the next pass.
 
-## 💻 Technical Skillset
+For a tape player, try flipping the tape while it’s playing and while it’s paused. Write down what you expect in each state before starting. Save the plan and review notes so the next session can pick up from there.
 
-* **Languages**: TypeScript, JavaScript, C++, Java, PHP, SQL.
-* **Frameworks/Tech**: React, Next.js 15, Node.js, Laravel, Supabase.
-* **AI/Automation**: n8n, Mandrill, Agentic Workflows, Harness Engineering.
-* **Testing/QA**: Cypress, Selenium, k6, Uptime Kuma.
+## Milestones
 
-## 💡 Leadership & Community
+- **Valedictorian · Nilai University, Class of 2026.** Delivered the graduating-class address on 26 September. Bachelor of Software Engineering, CGPA 3.82, and recipient of the Best Student Award.
+- **Software QA Intern · Hiredly.** Combined Cypress and AI-assisted workflows to expand candidate-tracking system test coverage to 87%.
+- **Campus leadership.** Served as Jarvis Technology Club president and Student Representative Council vice president.
 
-* **President of Jarvis Technology Club**: Driving tech literacy and innovation on campus.
-* **Former Student Council Vice President**: Strategic leadership and student advocacy.
-* **Awardee**: Best Project Award (CRC 2023) & 2nd Place (R2T2 Mission to Mars 2025).
+## GitHub activity
 
----
+[![Public GitHub commits over the latest 30 days](assets/commit-activity.svg)](https://github.com/search?q=author%3AJeffSiaYuHeng&type=commits)
 
-📫 **Contact**
-
-* Email: [siayuhengjeff@gmail.com](mailto:siayuhengjeff@gmail.com)
-* Portfolio: https://founder.onotape.one/
+Refreshed daily from GitHub’s public commit search across indexed default branches. Private repositories are excluded.

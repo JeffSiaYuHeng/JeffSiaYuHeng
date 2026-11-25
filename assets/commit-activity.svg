@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="90" viewBox="0 0 500 90" role="img" aria-labelledby="title">
+  <title id="title">Public GitHub commits over 30 days: awaiting first refresh</title>
+  <rect x="1" y="1" width="498" height="88" rx="8" fill="#101c19" stroke="#365951"/>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+    <text x="20" y="32" fill="#b6d2c7" font-size="13">PUBLIC GITHUB COMMITS · 30 DAYS</text>
+    <text x="20" y="63" fill="#9df2cd" font-size="18">Awaiting first refresh</text>
+  </g>
+</svg>
