@@ -9,12 +9,6 @@ I build AI systems from the first conversation to production at altShift. I work
 **Nilai University Valedictorian · Class of 2026**  
 Bachelor of Software Engineering · CGPA 3.82 · Best Student Award
 
-## ONOTAPE
-
-<a href="https://onotape.one/"><img src="assets/onotape-feature.svg" width="880" alt="Open ONOTAPE, a private digital cassette library."></a>
-
-A private digital cassette library with two sides, finite capacity, and tactile playback. Make a tape, keep it, or give it away. [Explore ONOTAPE →](https://onotape.one/)
-
 ## Selected work
 
 ### Enterprise AI Chatbot
