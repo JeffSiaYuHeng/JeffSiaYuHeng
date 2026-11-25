@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img" aria-labelledby="title">
+  <title id="title">ONOTAPE cassette illustration</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#2f4037"/>
+      <stop offset="1" stop-color="#111d17"/>
+    </linearGradient>
+    <linearGradient id="body" x2="0" y2="1">
+      <stop stop-color="#f1eee2"/>
+      <stop offset="1" stop-color="#bcbfb2"/>
+    </linearGradient>
+    <linearGradient id="paper" x2="1" y2="1">
+      <stop stop-color="#b8c9b3"/>
+      <stop offset="1" stop-color="#799581"/>
+    </linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 16V0h16" fill="none" stroke="#d8ede0" stroke-opacity=".055"/>
+    </pattern>
+    <g id="hub">
+      <circle r="16" fill="#8f9e94" stroke="#c3cdc4" stroke-width="1.2"/>
+      <circle r="10" fill="#25352b"/>
+      <path d="M0-7v4m6 7L3 2m-9 2 3-2" stroke="#bac8be" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g id="fastener">
+      <circle r="3.2" fill="#8d968c" stroke="#e4e7dc" stroke-width=".6"/>
+      <path d="M-1.5.6l3-1.2" stroke="#414b43" stroke-width=".8"/>
+    </g>
+  </defs>
+  <rect width="760" height="240" rx="12" fill="url(#bg)"/>
+  <rect width="760" height="240" rx="12" fill="url(#grid)"/>
+  <rect x="1" y="1" width="758" height="238" rx="11" fill="none" stroke="#597568"/>
+  <path d="M40 32h680M40 208h680" stroke="#849d8f" opacity=".34"/>
+  <path d="M40 40V32h8m664 0h8v8M40 200v8h8m664 0h8v-8" fill="none" stroke="#b5cabe"/>
+  <g transform="translate(387 38)">
+    <rect x="3" y="7" width="292" height="166" rx="11" fill="#07100b" opacity=".65"/>
+    <rect width="292" height="166" rx="10" fill="url(#body)" stroke="#f8f5e9"/>
+    <rect x="13" y="14" width="266" height="110" rx="5" fill="url(#paper)" stroke="#667e6d"/>
+    <path d="M29 46h234M29 53h234M29 110h234" stroke="#3f5c4b" opacity=".5"/>
+    <text x="29" y="38" fill="#253d2f" font-family="monospace" font-size="15" font-weight="700">ONO</text>
+    <text x="235" y="38" fill="#253d2f" font-family="monospace" font-size="13">C60</text>
+    <rect x="71" y="64" width="150" height="37" rx="17" fill="#1d2c24" stroke="#556c60"/>
+    <path d="M89 72h114m-114 21h114" stroke="#ae8765" stroke-width="2"/>
+    <use href="#hub" x="90" y="82"/>
+    <use href="#hub" x="202" y="82"/>
+    <path d="M70 164l15-33h122l15 33z" fill="#b3b9ad" stroke="#818d83"/>
+    <path d="M104 149h84" stroke="#68786c" stroke-width="3" stroke-dasharray="5 7"/>
+    <use href="#fastener" x="8" y="8"/>
+    <use href="#fastener" x="284" y="8"/>
+    <use href="#fastener" x="8" y="158"/>
+    <use href="#fastener" x="284" y="158"/>
+    <use href="#fastener" x="146" y="139"/>
+  </g>
+  <text x="60" y="111" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="49" font-weight="700" letter-spacing="3" fill="#f1f4eb">ONOTAPE</text>
+  <path d="M62 134h170" stroke="#a9ccae" stroke-width="2"/>
+  <text x="62" y="161" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16" fill="#becfc1">Private digital tape library</text>
+</svg>

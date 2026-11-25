@@ -6,16 +6,19 @@
 
 I build AI systems from problem definition to production at altShift. My work spans retrieval, evaluation, full-stack delivery, and the workflows people use to check the results. On the side, I build ONOTAPE, a private digital cassette library.
 
+## ONOTAPE
+
+A private digital cassette library with two-sided tapes, finite capacity, and tactile playback. Make a tape, keep it, or give it away.
+
+<a href="https://onotape.one/"><img src="assets/onotape-feature.svg" width="760" alt="Explore ONOTAPE. Illustration of an ivory cassette with a sage paper label."></a>
+
 ## Selected work
 
 | Project | What I built |
 | --- | --- |
 | **Enterprise AI Chatbot** | Built and deployed an internal knowledge assistant using retrieval-augmented generation. I worked across document ingestion, embeddings, vector search, model integration, the interface, and testing. |
 | **Financial Consolidation & Reconciliation** | Built workflows to consolidate records across locations, reconcile sales and purchases, match bank transactions, and surface trial balance and profit-and-loss reports. |
-| **[ONOTAPE](https://onotape.one/)** | A private digital cassette library with two-sided tapes, finite capacity, and tactile playback. Make a tape, keep it, or give it away. |
 | **Fishture** | An AI fishing companion prototyped in three hours. Top 5 at the March 2026 GDG / Google DeepMind Hackathon. |
-
-<a href="https://onotape.one/"><img src="assets/onotape-project.png" width="160" alt="ONOTAPE pixel-art wordmark"></a>
 
 ## Milestones
 

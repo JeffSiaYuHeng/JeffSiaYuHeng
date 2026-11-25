@@ -3,13 +3,22 @@
   <desc id="description">Full Stack AI Engineer and creator of ONOTAPE. Two cassette reels turn as the tape deck powers on.</desc>
   <defs>
     <linearGradient id="case" x2="0" y2="1">
-      <stop stop-color="#292d2b"/>
-      <stop offset="1" stop-color="#111614"/>
+      <stop stop-color="#333834"/>
+      <stop offset="1" stop-color="#0c100e"/>
     </linearGradient>
     <linearGradient id="glass" x2=".9" y2="1">
       <stop stop-color="#242d28"/>
       <stop offset="1" stop-color="#111814"/>
     </linearGradient>
+    <linearGradient id="aluminum" x2="0" y2="1">
+      <stop stop-color="#d6d8ce"/>
+      <stop offset=".48" stop-color="#aeb7ac"/>
+      <stop offset="1" stop-color="#87958b"/>
+    </linearGradient>
+    <g id="screw">
+      <circle r="3.3" fill="#65756b" stroke="#e2e7de" stroke-width=".55"/>
+      <path d="M-1.6 0h3.2" stroke="#ecf1eb" stroke-width=".7"/>
+    </g>
     <g id="spindle">
       <circle r="23" fill="#9dada5" stroke="#d5e0d9" stroke-width="1"/>
       <circle r="16" fill="#17251e" stroke="#698777"/>
@@ -27,22 +36,31 @@
   </defs>
   <rect width="880" height="238" rx="14" fill="url(#case)"/>
   <rect x="1" y="1" width="878" height="236" rx="13" fill="none" stroke="#697972"/>
-  <path d="M27 205h826" stroke="#45554c"/>
+  <path d="M24 18h832M24 204h832M24 213h832" stroke="#45554c"/>
+  <path d="M38 222h139m526 0h139" stroke="#81978b" stroke-width="2" stroke-dasharray="4 7" opacity=".55"/>
   <path d="M32 37v143" stroke="#8be7b5" stroke-width="3"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
     <text x="54" y="100" fill="#f0f2ed" font-size="46" font-weight="700">Jeff Sia Yu Heng</text>
     <text x="55" y="138" fill="#a9ddbc" font-size="19">Full Stack AI Engineer</text>
     <text x="55" y="168" fill="#bec9c2" font-size="17">Creator of ONOTAPE</text>
   </g>
-  <rect x="567" y="35" width="278" height="146" rx="7" fill="#aab1a7" stroke="#d1d6cb"/>
+  <rect x="563" y="32" width="286" height="156" rx="9" fill="#070c09"/>
+  <rect x="567" y="35" width="278" height="146" rx="7" fill="url(#aluminum)" stroke="#d1d6cb"/>
+  <path d="M579 154h254m-254 21h254" stroke="#67766d" opacity=".7"/>
+  <use href="#screw" x="575" y="43"/>
+  <use href="#screw" x="837" y="43"/>
+  <use href="#screw" x="575" y="173"/>
+  <use href="#screw" x="837" y="173"/>
   <rect x="579" y="47" width="254" height="103" rx="4" fill="url(#glass)" stroke="#67766d"/>
-  <path d="M635 63h139m-139 70h139" fill="none" stroke="#805e43" stroke-width="2"/>
+  <path d="M591 57h230m-230 82h230" stroke="#607068" opacity=".35"/>
+  <path d="M635 63h139m-139 70h139" fill="none" stroke="#a88360" stroke-width="2"/>
   <circle cx="635" cy="98" r="36" fill="#282420" stroke="#7d6c56" stroke-width="3"/>
   <circle cx="774" cy="98" r="35" fill="#282420" stroke="#7d6c56" stroke-width="3"/>
   <g transform="translate(635 98)"><g class="spindle"><use href="#spindle"/></g></g>
   <g transform="translate(774 98)"><g class="spindle takeup"><use href="#spindle"/></g></g>
   <path d="M687 118V95h5v23zm8 0V83h5v35zm8 0V75h5v43zm8 0V88h5v30zm8 0V100h5v18z" class="level" fill="#8be7b5"/>
-  <circle cx="590" cy="164" r="3" fill="#3a5848"/>
+  <circle cx="590" cy="164" r="4" fill="#2a4536"/>
+  <circle cx="590" cy="164" r="2" fill="#a8f0c7"/>
   <text x="605" y="168" fill="#23352b" font-family="monospace" font-size="13" font-weight="700" letter-spacing="2">ONO TAPE</text>
   <text x="810" y="168" fill="#23352b" font-family="monospace" font-size="13" font-weight="700">A</text>
 </svg>

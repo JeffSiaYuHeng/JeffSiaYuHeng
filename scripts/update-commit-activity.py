@@ -72,10 +72,18 @@ def count_private_commits(today, token):
 def render_card(total, today):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="500" height="90" viewBox="0 0 500 90" role="img" aria-labelledby="title">
   <title id="title">{total:,} private-repository commits over 30 days as of {today.isoformat()} UTC</title>
-  <rect x="1" y="1" width="498" height="88" rx="8" fill="#111814" stroke="#586c61"/>
+  <defs>
+    <linearGradient id="plate" x2="1" y2="1">
+      <stop stop-color="#23352b"/>
+      <stop offset="1" stop-color="#101914"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="498" height="88" rx="8" fill="url(#plate)" stroke="#658477"/>
+  <path d="M9 14v62" stroke="#8fd6ac" stroke-width="2"/>
+  <path d="M383 21h95m-95 6h95" stroke="#6d9583" opacity=".45" stroke-dasharray="2 4"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
-    <text x="20" y="31" fill="#c3d3c9" font-size="13">PRIVATE REPOSITORY COMMITS · 30 DAYS</text>
-    <text x="20" y="68" fill="#a9edc7" font-size="30" font-weight="700">{total:,}</text>
+    <text x="25" y="31" fill="#c3d3c9" font-size="13">PRIVATE REPOSITORY COMMITS · 30 DAYS</text>
+    <text x="25" y="68" fill="#a9edc7" font-size="30" font-weight="700">{total:,}</text>
     <text x="479" y="66" text-anchor="end" fill="#c3d3c9" font-size="12">{today.isoformat()} UTC</text>
   </g>
 </svg>
